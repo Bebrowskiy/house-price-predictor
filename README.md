@@ -57,7 +57,7 @@ Users can input the following house characteristics for price prediction:
 1. Install the repository
 
 ```sh
-git clone
+git clone https://github.com/Bebrowskiy/house-price-predictor.git
 ```
 
 2. Install dependencies
