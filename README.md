@@ -52,6 +52,29 @@ Users can input the following house characteristics for price prediction:
 1. **Predicted House Price**: Predicted house price based on the entered data
 2. **Rounded Prediction**: Rounded house price
 
+## Usage example
+
+If you want to predict the value of a house with the following characteristics:
+
+- Median Income: 60 000$
+- House Age: 25 years
+- Average Rooms: 7
+- Average Bedrooms: 3
+- Population: 2500 people
+- Average Occupancy: 3.5 people
+- Latitude: 34.05
+- Longitude: -118.25
+
+Then the form will be filled out as follows:
+- Median Income: 6.0
+- House Age: 25.0
+- Average Number of Rooms: 7.0
+- Average Number of Bedrooms: 3.0
+- Population: 2500.0
+- Average Occupancy: 3.5
+- Latitude: 34.05
+- Longitude: -118.25
+
 ## Running the Application
 
 1. Install the repository
