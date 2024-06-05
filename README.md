@@ -1,4 +1,3 @@
-<p align="center">House Price Predictor</p>
 <p align="center"><img alt="image" src="pictures/image.png" /></p>
 
 # House Price Predictor Project
