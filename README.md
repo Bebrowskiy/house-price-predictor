@@ -3,7 +3,7 @@
 
 # House Price Predictor Project
 
-This project is a web application for predicting house prices in California using machine learning. Users can input various characteristics of a house, and based on this data, the model predicts the price of the house.
+This project is a web application for predicting house prices in California using machine learning (I use a sklearn dataset *fetch_california_housing*. Users can input various characteristics of a house, and based on this data, the model predicts the price of the house.
 
 ## Project Structure
 
