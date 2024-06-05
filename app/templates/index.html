@@ -1,0 +1,43 @@
+<!-- app/templates/index.html -->
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<h1 class="mt-5" , align="center">House Price Predictor</h1>
+{% if prediction %}
+<div class="mt-5">
+  <h3 align="left">Predicted House Price:</h3>
+  <p class="lead">${{ prediction * 100000 }}</p>
+</div>
+<div class="mt-3">
+  <h3>Rounded Prediction:</h3>
+  <p class="lead">${{ rounded_prediction * 100000 }}</p>
+</div>
+{% endif %}
+<form method="POST" action="{{ url_for('main.index') }}">
+  {{ form.hidden_tag() }}
+  <div class="form-group">
+    {{ form.MedInc.label }} {{ form.MedInc(class="form-control") }}
+  </div>
+  <div class="form-group">
+    {{ form.HouseAge.label }} {{ form.HouseAge(class="form-control") }}
+  </div>
+  <div class="form-group">
+    {{ form.AveRooms.label }} {{ form.AveRooms(class="form-control") }}
+  </div>
+  <div class="form-group">
+    {{ form.AveBedrms.label }} {{ form.AveBedrms(class="form-control") }}
+  </div>
+  <div class="form-group">
+    {{ form.Population.label }} {{ form.Population(class="form-control") }}
+  </div>
+  <div class="form-group">
+    {{ form.AveOccup.label }} {{ form.AveOccup(class="form-control") }}
+  </div>
+  <div class="form-group">
+    {{ form.Latitude.label }} {{ form.Latitude(class="form-control") }}
+  </div>
+  <div class="form-group">
+    {{ form.Longitude.label }} {{ form.Longitude(class="form-control") }}
+  </div>
+  <button type="submit" class="btn btn-primary">Predict</button>
+</form>
+{% endblock %}
